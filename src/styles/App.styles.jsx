@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledApp = styled.div`
+color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

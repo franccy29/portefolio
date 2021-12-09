@@ -12,12 +12,21 @@ function App() {
   const profession = useRef();
   const intro = useRef();
   const images = useRef();
+  const reactImage = useRef();
+  const JsImage = useRef();
+  const GSAPImage = useRef();
+  const nodeJsImage = useRef();
+
 
   useEffect(() => {
     gsap.to(name.current, { duration: 2.5, x: 100 });
     gsap.to(profession.current, { duration: 2.5, x: 100 });
     gsap.to(intro.current, { duration: 2.5, x: 100 });
     gsap.to(images.current, { duration: 2.5, x: 100 });
+    gsap.to(reactImage.current, { borderRadius: "20%", border: "5px solid white" });
+    gsap.to(JsImage.current, { borderRadius: "20%", border: "5px solid white" });
+    gsap.to(GSAPImage.current, { borderRadius: "20%", border: "5px solid white" });
+    gsap.to(nodeJsImage.current, { borderRadius: "20%", border: "5px solid white" });
   });
 
   return (
@@ -28,10 +37,10 @@ function App() {
         Bienvenue! Je suis un developpeur web full-stack dans la région de Montréal, QC.
       </div>
       <div className={"images"} ref={images} >
-        <img src={react} alt="React" />
-        <img src={JS} alt="Java Script" />
-        <img src={GSAP} alt="GSAP" />
-        <img src={nodejs} alt="nodeJS" />
+        <img src={react} alt="React" ref={reactImage} />
+        <img src={JS} alt="Java Script" ref={JsImage} />
+        <img src={GSAP} alt="GSAP" ref={GSAPImage} />
+        <img src={nodejs} alt="nodeJS" ref={nodeJsImage} />
       </div>
     </StyledApp>
   );
