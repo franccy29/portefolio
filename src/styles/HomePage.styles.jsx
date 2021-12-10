@@ -35,7 +35,7 @@ export const StyledHomePage = styled.div`
     border-radius: 15px 15px 0 0;
     background-color: white;
     color: black;
-    margin-top: 20em;
+    margin-top: 33em;
     text-align: center;
   }
 

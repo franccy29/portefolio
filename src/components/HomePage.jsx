@@ -7,7 +7,7 @@ import JS from "../image/JS.png";
 import nodejs from "../image/nodejs.png";
 
 function HomePage() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(null);
 
 
   const name = useRef();
@@ -30,7 +30,7 @@ function HomePage() {
     gsap.to(JsImage.current, { borderRadius: "20%", border: "5px solid white" });
     gsap.to(GSAPImage.current, { borderRadius: "20%", border: "5px solid white" });
     gsap.to(nodeJsImage.current, { borderRadius: "20%", border: "5px solid white" });
-    show ? gsap.to(resume.current, { duration: 2, y: -10 }) : gsap.to(resume.current, { duration: 2, y: 100 }) ;
+    show === "montre" ? gsap.to(resume.current, { duration: 2, y: -210 }) : (show === "pasMontre" ? gsap.to(resume.current, { duration: 2, y: -100 }) : gsap.to(resume.current, { duration: 1, y: -100 }));
   });
 
 
@@ -52,11 +52,11 @@ function HomePage() {
       <div
         className={"aboutSection"}
         ref={resume}
-        onMouseEnter={() => setShow(true)}
-        onMouseLeave={() => setShow(false)}
+        onMouseEnter={() => setShow("montre")}
+        onMouseLeave={() => setShow("pasMontre")}
       >
         <h2>Résumer</h2>
-        {show && <p>Aillant travailler en restauration durant 8 ans, je considère avoir beaucoup appris sur les habitudes de la clientèle et comment bien l'approcher. Ce domaine est tres souvent dans un environnement sous pression ou nous devons travailler en équipe vers un but commun. Depuis mon tout jeune âge j'ai été attirer vers le developpement informatique, j'ai donc décider tenter ma chance dans un Bootcamp avec LightHouse Labs. En plus, j'ai suivis certains cours de CÉGEP dans ce domaine. Je suis donc acctuellement a la recherche d'un emplois qui utilise React ou autre technologie de la sorte.</p>}
+        <p>Aillant travailler en restauration durant 8 ans, je considère avoir beaucoup appris sur les habitudes de la clientèle et comment bien l'approcher. Ce domaine est tres souvent dans un environnement sous pression ou nous devons travailler en équipe vers un but commun. Depuis mon tout jeune âge j'ai été attirer vers le developpement informatique, j'ai donc décider tenter ma chance dans un Bootcamp avec LightHouse Labs. En plus, j'ai suivis certains cours de CÉGEP dans ce domaine. Je suis donc acctuellement a la recherche d'un emplois qui utilise React ou autre technologie de la sorte.</p>
       </div>
     </StyledHomePage>
   );
