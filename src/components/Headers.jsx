@@ -6,7 +6,6 @@ function Headers() {
   const [hoverComponent, setHoverComponent] = useState(null);
   const total = useRef();
   const titre = useRef();
-  const about = useRef();
   const projet = useRef();
   const travail = useRef();
 
@@ -14,8 +13,6 @@ function Headers() {
     switch (args) {
       case "titre":
         return titre;
-      case "about":
-        return about;
       case "projet":
         return projet;
       case "travail":
@@ -35,7 +32,6 @@ function Headers() {
       gsap.to(target.current, { borderRadius: "60%", borderBottom: "2px solid white" });
     } else {
       gsap.to(titre.current, { borderRadius: "0%", border: "0px solid white" });
-      gsap.to(about.current, { borderRadius: "0%", border: "0px solid white" });
       gsap.to(projet.current, { borderRadius: "0%", border: "0px solid white" });
       gsap.to(travail.current, { borderRadius: "0%", border: "0px solid white" });
     }
@@ -54,13 +50,6 @@ function Headers() {
       </span>
 
       <div className={"item"} >
-        <span
-          ref={about}
-          onMouseEnter={() => setHoverComponent("about")}
-          onMouseLeave={() => setHoverComponent(null)}
-        >
-          À propos de moi
-        </span>
         <span
           ref={projet}
           onMouseEnter={() => setHoverComponent("projet")}

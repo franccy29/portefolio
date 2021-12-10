@@ -4,7 +4,7 @@ export const StyledHomePage = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 100px;
 
   & img {
@@ -30,4 +30,18 @@ export const StyledHomePage = styled.div`
     align-self: center;
   }
 
+  & .aboutSection {
+    width: 50%;
+    border-radius: 15px 15px 0 0;
+    background-color: white;
+    color: black;
+    margin-top: 20em;
+    text-align: center;
+  }
+
+  & .nameTag {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
 `;
