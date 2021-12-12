@@ -30,7 +30,9 @@ function HomePage() {
     gsap.to(JsImage.current, { borderRadius: "20%", border: "5px solid white" });
     gsap.to(GSAPImage.current, { borderRadius: "20%", border: "5px solid white" });
     gsap.to(nodeJsImage.current, { borderRadius: "20%", border: "5px solid white" });
-    show === "montre" ? gsap.to(resume.current, { duration: 2, y: -210 }) : (show === "pasMontre" ? gsap.to(resume.current, { duration: 2, y: -100 }) : gsap.to(resume.current, { duration: 1, y: -100 }));
+    show === "montre" ? gsap.to(resume.current, { duration: 2, y: -210 }) :
+      (show === "pasMontre" ? gsap.to(resume.current, { duration: 2, y: -100 }) :
+        gsap.to(resume.current, { duration: 1, y: -100 }));
   });
 
 

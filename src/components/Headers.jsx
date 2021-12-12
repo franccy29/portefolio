@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from "gsap";
 import { StyledHeaders } from "../styles/Headers.styles.jsx";
 
-function Headers() {
+function Headers(props) {
+  const { onClick } = props;
   const [hoverComponent, setHoverComponent] = useState(null);
   const total = useRef();
   const titre = useRef();
@@ -45,6 +46,7 @@ function Headers() {
         className={"titre"}
         onMouseEnter={() => setHoverComponent("titre")}
         onMouseLeave={() => setHoverComponent(null)}
+        onClick={() => onClick("HomePage")}
       >
         Portfolio
       </span>
@@ -54,6 +56,7 @@ function Headers() {
           ref={projet}
           onMouseEnter={() => setHoverComponent("projet")}
           onMouseLeave={() => setHoverComponent(null)}
+          onClick={() => onClick("projet")}
         >
           Mes projets
         </span>
@@ -61,6 +64,7 @@ function Headers() {
           ref={travail}
           onMouseEnter={() => setHoverComponent("travail")}
           onMouseLeave={() => setHoverComponent(null)}
+          onClick={() => onClick("travail")}
         >
           Travailler avec moi
         </span>
