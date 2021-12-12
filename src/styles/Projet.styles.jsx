@@ -6,6 +6,8 @@ export const StyledProjet = styled.div`
   margin-top: 3em;
   & div {
     padding: 8em 0;
+    display: flex;
+    justify-content: space-evenly;
 
     & img {
       width: 400px;
