@@ -14,5 +14,10 @@ export const StyledProjet = styled.div`
       height: 175px;
       margin: 0 5em;
     }
+
+    & p {
+      width: 400px;
+      height: 175px;
+    }
   }
 `;

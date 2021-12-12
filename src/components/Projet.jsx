@@ -34,24 +34,33 @@ function Projet() {
       <div className={"football"} >
         <img src={footballImage} alt="calala" ref={gauche1} />
         <p ref={droite1} >
-          Un gros resumer de cette appli la, je veux parler autant du stack que de lutilité et de comment je lai fait.
+          A helper app that allows users to at-a-glance see rich basketball data/statistics for their fantasy team so that they
+          can make more informed and competitive decisions. This app is designed to be a complementary tool for the fantasy basketball
+          experience.
+          <br/>Tech Stack: React, Styled-component, Victory, Material UI, Knex, ExpressJs, Postgresql.
         </p>
       </div>
       <div className={"scheduler"} >
         <p ref={gauche2} >
-          Un gros resumer de cette appli la, je veux parler autant du stack que de lutilité et de comment je lai fait.
+          This is a project based on the Lighthouse Labs bootcamp. It's my first time using React, StoryBook, Jest, Cypress.
+          The CSS was given to me, I really liked the way React and Cypress works. The project works fine, there is some improvement possible,
+          I will try to update it with some stretch work but this is not a guarantied.
+          <br/>Tech Stack: React, Axios, Storybook, Jest, Cypress, Babel, Sass.
         </p>
         <img src={schedulerImage} alt="calala" ref={droite2} />
       </div>
       <div className={"tweeter"} >
         <img src={tweeterImage} alt="calala" ref={gauche3}  />
         <p ref={droite3} >
-          Un gros resumer de cette appli la, je veux parler autant du stack que de lutilité et de comment je lai fait.
+          Tweeter is a simple, single-page Twitter clone.
+          <br/>Tech Stack: jQuery, AJAX, Node, ExpressJs, MongoDB.
         </p>
       </div>
       <div className={"tinny"} >
         <p ref={gauche4}  >
-          Un gros resumer de cette appli la, je veux parler autant du stack que de lutilité et de comment je lai fait.
+          TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).
+          <br/>Tech Stack: Chai, Mocha, Cookie-session, Ejs, ExpressJs.
+
         </p>
         <img src={tinnyImage} alt="calala" ref={droite4} />
       </div>
