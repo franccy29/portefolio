@@ -8,6 +8,7 @@ export const StyledProjet = styled.div`
     padding: 8em 0;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     & img {
       width: 400px;
