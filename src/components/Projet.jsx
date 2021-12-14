@@ -31,25 +31,24 @@ function Projet() {
 
   return (
     <StyledProjet>
-      <h3>Mes projets</h3>
+      <h2>Mes projets</h2>
       <div className={"football"} >
         <img src={footballImage} alt="calala" ref={gauche1} />
         <p ref={droite1} >
           Fantasy Hoops est une application qui permet aux utilisateurs de consulter rapidement et graphiquement plusieurs statistiques
           plus ou moin avancer sur les performances de leurs équipes de fantasy basketball. L'application est fait d'une façon à être
           complémentaire pour rendre les décisions en question d'alignement plus facile à chaque semaine.
+          <br/>
           <br/>Tech Stack: React, JWT, Styled-component, Victory, Material UI, Knex, ExpressJs, Postgresql.
-          <br/>(Ce projet est en cours, le frontend se fait remodeler en utilisant react-router et GSAP. Le backend se fait réécrire en .net core)
+          <br/>
+          <br/>(Ce projet est en cours, le frontend se fait remodeler en utilisant react-router et GSAP tandis que le backend se fait réécrire en .net core)
         </p>
       </div>
       <div className={"scheduler"} >
         <p ref={gauche2} >
-          This is a project based on the Lighthouse Labs bootcamp. It's my first time using React, StoryBook, Jest, Cypress.
-          The CSS was given to me, I really liked the way React and Cypress works. The project works fine, there is some improvement possible,
-          I will try to update it with some stretch work but this is not a guarantied.
-
           Ce projet est un simple planificateur, un projet future sera d'ajouter une gestion d'utilisateur et de rendre l'application utilisable
           pour plusieurs autres situations que seulement ce qu'elle nous procure en ce moment. Ce projet vient du bootcamp LightHouse Labs.
+          <br/>
           <br/>Tech Stack: React, Axios, Storybook, Jest, Cypress, Babel, Sass.
         </p>
         <img src={schedulerImage} alt="calala" ref={droite2} />
@@ -58,14 +57,15 @@ function Projet() {
         <img src={tweeterImage} alt="calala" ref={gauche3}  />
         <p ref={droite3} >
           Tout simplement un clone de twitter fait en application web monopage(SPA).
+          <br/>
           <br/>Tech Stack: jQuery, AJAX, Node, ExpressJs, MongoDB.
         </p>
       </div>
       <div className={"tinny"} >
         <p ref={gauche4}  >
           Un clone de bit.ly, qui gère et génère des liens URL plus court.
+          <br/>
           <br/>Tech Stack: Chai, Mocha, Cookie-session, Ejs, ExpressJs.
-
         </p>
         <img src={tinnyImage} alt="calala" ref={droite4} />
       </div>

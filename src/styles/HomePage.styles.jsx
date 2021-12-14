@@ -6,6 +6,12 @@ export const StyledHomePage = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+  overflow: hidden;
+
+  & .resume {
+    width: 60%;
+    font-size: 1.5em
+  }
 
   & img {
     height: 100px;
@@ -28,15 +34,6 @@ export const StyledHomePage = styled.div`
 
   & .images {
     align-self: center;
-  }
-
-  & .aboutSection {
-    width: 50%;
-    border-radius: 15px 15px 0 0;
-    background-color: white;
-    color: black;
-    margin-top: 33em;
-    text-align: center;
   }
 
   & .nameTag {

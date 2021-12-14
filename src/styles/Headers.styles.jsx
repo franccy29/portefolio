@@ -5,6 +5,7 @@ export const StyledHeaders = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
+  margin: 0 4em;
 
   & .titre {
     margin: 0 1.2em;

@@ -8,7 +8,6 @@ function Headers(props) {
   const total = useRef();
   const titre = useRef();
   const projet = useRef();
-  const travail = useRef();
 
   const findState = (args) => {
     switch (args) {
@@ -16,8 +15,6 @@ function Headers(props) {
         return titre;
       case "projet":
         return projet;
-      case "travail":
-        return travail;
       default:
         return null;
     }
@@ -34,7 +31,6 @@ function Headers(props) {
     } else {
       gsap.to(titre.current, { borderRadius: "0%", border: "0px solid white" });
       gsap.to(projet.current, { borderRadius: "0%", border: "0px solid white" });
-      gsap.to(travail.current, { borderRadius: "0%", border: "0px solid white" });
     }
   }, [hoverComponent])
 
@@ -59,14 +55,6 @@ function Headers(props) {
           onClick={() => onClick("projet")}
         >
           Mes projets
-        </span>
-        <span
-          ref={travail}
-          onMouseEnter={() => setHoverComponent("travail")}
-          onMouseLeave={() => setHoverComponent(null)}
-          onClick={() => onClick("travail")}
-        >
-          Travailler avec moi
         </span>
       </div>
 
