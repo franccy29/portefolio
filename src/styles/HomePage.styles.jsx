@@ -10,7 +10,7 @@ export const StyledHomePage = styled.div`
 
   & .resume {
     width: 60%;
-    font-size: 1.5em
+    font-size: 1.5em;
   }
 
   & img {
@@ -30,6 +30,7 @@ export const StyledHomePage = styled.div`
   & .intro {
     font-size: 3em;
     padding: 1em 0;
+    margin-right: 150px;
   }
 
   & .images {
@@ -40,5 +41,6 @@ export const StyledHomePage = styled.div`
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+    margin-left: 150px;
   }
 `;
