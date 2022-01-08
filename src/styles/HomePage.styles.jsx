@@ -6,7 +6,7 @@ export const StyledHomePage = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  overflow: hidden;
+  overflow-x: hidden;
 
   & .resume {
     width: 60%;
@@ -35,12 +35,5 @@ export const StyledHomePage = styled.div`
 
   & .images {
     align-self: center;
-  }
-
-  & .nameTag {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    margin-left: 150px;
   }
 `;

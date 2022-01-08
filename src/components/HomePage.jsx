@@ -33,10 +33,6 @@ function HomePage() {
 
   return (
     <StyledHomePage>
-      <div className={"nameTag"}>
-        <span className={"nom"} ref={name} >François Martineau</span>
-        <span className={"profession"} ref={profession} >Developpeur web</span>
-      </div>
       <div className={"intro"} ref={intro} >
         Bienvenue! Je suis un developpeur web full-stack dans la région de Montréal, QC.
       </div>

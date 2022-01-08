@@ -6,15 +6,19 @@ function Headers(props) {
   const { onClick } = props;
   const [hoverComponent, setHoverComponent] = useState(null);
   const total = useRef();
-  const titre = useRef();
-  const projet = useRef();
+  const nom = useRef();
+  const blog = useRef();
+  const contact = useRef();
+
 
   const findState = (args) => {
     switch (args) {
-      case "titre":
-        return titre;
-      case "projet":
-        return projet;
+      case "nom":
+        return nom;
+      case "blog":
+        return blog;
+      case "contact":
+        return contact;
       default:
         return null;
     }
@@ -29,8 +33,9 @@ function Headers(props) {
     if (hoverComponent) {
       gsap.to(target.current, { borderRadius: "60%", borderBottom: "2px solid white" });
     } else {
-      gsap.to(titre.current, { borderRadius: "0%", border: "0px solid white" });
-      gsap.to(projet.current, { borderRadius: "0%", border: "0px solid white" });
+      gsap.to(nom.current, { borderRadius: "0%", border: "0px solid white" });
+      gsap.to(blog.current, { borderRadius: "0%", border: "0px solid white" });
+      gsap.to(contact.current, { borderRadius: "0%", border: "0px solid white" });
     }
   }, [hoverComponent])
 
@@ -38,23 +43,31 @@ function Headers(props) {
   return (
     <StyledHeaders ref={total} >
       <span
-        ref={titre}
-        className={"titre"}
-        onMouseEnter={() => setHoverComponent("titre")}
+        ref={nom}
+        className={"nom"}
+        onMouseEnter={() => setHoverComponent("nom")}
         onMouseLeave={() => setHoverComponent(null)}
         onClick={() => onClick("HomePage")}
       >
-        Portfolio
+        François Martineau
       </span>
 
       <div className={"item"} >
         <span
-          ref={projet}
-          onMouseEnter={() => setHoverComponent("projet")}
+          ref={blog}
+          onMouseEnter={() => setHoverComponent("blog")}
           onMouseLeave={() => setHoverComponent(null)}
-          onClick={() => onClick("projet")}
+          onClick={() => onClick("blog")}
         >
-          Mes projets
+          Blog
+        </span>
+        <span
+          ref={contact}
+          onMouseEnter={() => setHoverComponent("contact")}
+          onMouseLeave={() => setHoverComponent(null)}
+          onClick={() => onClick("contact")}
+        >
+          Me contacter
         </span>
       </div>
 
