@@ -28,8 +28,8 @@ function HomePage() {
     gsap.to(intro.current, { duration: 2.5, x: 100 });
     gsap.to(images.current, { duration: 2.5, x: 100 });
     gsap.to(reactImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
-    gsap.to(JsImage.current, { borderRadius: "20%", border: "5px solid black" });
-    gsap.to(nodeJsImage.current, { borderRadius: "20%", border: "5px solid white" });
+    gsap.to(JsImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(nodeJsImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
   });
 
 

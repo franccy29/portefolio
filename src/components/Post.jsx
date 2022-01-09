@@ -5,12 +5,11 @@ import React from 'react';
 import { StyledPost } from "../styles/Post.styles.jsx";
 
 function Post(props) {
-  const { text, titre } = props;
+  const { id, title, onClick } = props;
 
   return (
-    <StyledPost>
-        <h2>{titre}</h2>
-        <p>{text}</p>
+    <StyledPost onClick={() => onClick(id)} >
+        <p>{title}</p>
     </StyledPost>
   );
 }

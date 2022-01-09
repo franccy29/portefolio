@@ -1,17 +1,26 @@
 import React from 'react';
+import blogData from "../blog/test.json";
 import Post from "./Post.jsx";
+
 
 
 
 import { StyledBlog } from "../styles/Blog.styles.jsx";
 
 
-function Blog() {
-  const allPost = [<Post titre={"titreeee"} text={"test"} />, <Post titre={"titdsafsadfreeee"} text={"tfsadfsadest"} />, <Post titre={"fsdfsa"} text={"tasfdfsdaest"} />];
-  
+function Blog(props) {
+  const { onClick } = props;
+  const blogPost = [];
+
+  blogData.forEach((data) => {
+    blogPost.push(<Post key={data.id} id={data.id} title={data.title} onClick={onClick} />)
+  });
+
   return (
     <StyledBlog>
-        {allPost}
+
+    {blogPost}
+
     </StyledBlog>
   );
 }

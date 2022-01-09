@@ -1,0 +1,15 @@
+[
+  {
+    "id": 0,
+    "title": "ORMs, specially TypeORM",
+    "text1": "An ORM is short for Object-Relational Mapping. It’s a wide term used, most of the time, to refer to a library that implements an ORM.This Object-Relational Mapping technique is meant to change the way you interact with the database.",
+    "img1": "https://miro.medium.com/max/700/1*dNC0xCS8d6mM2q4t5QBU1A.jpeg",
+    "text2": "The SQL language can be somethinghard to learn and also to use, these ORMs libraries make everything easier. You don’t have to use SQL anymore, you are using Python, PHP,Java, Javascript, or much more! This still requires a learning time like every framework but it pushes you in a direction of MVC and dry code too!"
+  },
+  {
+    "id": 1,
+    "title": "titre test",
+    "text1": "un text ici",
+    "img1": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png"
+  }
+]
