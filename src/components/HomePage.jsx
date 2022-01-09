@@ -27,9 +27,9 @@ function HomePage() {
     gsap.to(profession.current, { duration: 2.5, x: 100 });
     gsap.to(intro.current, { duration: 2.5, x: 100 });
     gsap.to(images.current, { duration: 2.5, x: 100 });
-    gsap.to(reactImage.current, { borderRadius: "20%", border: "5px solid #3f826d" });
-    gsap.to(JsImage.current, { borderRadius: "20%", border: "5px solid #3f826d" });
-    gsap.to(nodeJsImage.current, { borderRadius: "20%", border: "5px solid #3f826d" });
+    gsap.to(reactImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(JsImage.current, { borderRadius: "20%", border: "5px solid black" });
+    gsap.to(nodeJsImage.current, { borderRadius: "20%", border: "5px solid white" });
   });
 
 
@@ -53,13 +53,14 @@ function HomePage() {
         <img src={nodejs} alt="nodeJS" ref={nodeJsImage} />
       </div>
 
-      <div className={"projet"}>
-
         <div className={"top"}>
           <h2>Mes projets</h2>
           <img src={arrowDown} alt="arrowDown" />
         </div>
 
+      <div className={"projet"}>
+
+        <div className={"border"}>
         <h2>Fantasy Hoops</h2>
         <div className={"football"} >
           <img src={footballImage} alt="calala" />
@@ -73,7 +74,10 @@ function HomePage() {
             <br/>(Ce projet est en cours, le frontend se fait remodeler en utilisant react-router et GSAP tandis que le backend se fait réécrire en .net core)
           </p>
         </div>
+        </div>
 
+        <div className={"border"}>
+        
         <h2>Scheduler</h2>
         <div className={"scheduler"} >
           <p>
@@ -84,6 +88,9 @@ function HomePage() {
           </p>
           <img src={schedulerImage} alt="calala" />
         </div>
+        </div>
+
+        <div className={"border"}>
 
         <h2>Tweeter</h2>
         <div className={"tweeter"} >
@@ -94,6 +101,9 @@ function HomePage() {
             <br/>Tech Stack: jQuery, AJAX, Node, ExpressJs, MongoDB.
           </p>
         </div>
+        </div>
+
+        <div className={"border"}>
 
         <h2>Tinny URL</h2>
         <div className={"tinny"} >
@@ -103,6 +113,7 @@ function HomePage() {
             <br/>Tech Stack: Chai, Mocha, Cookie-session, Ejs, ExpressJs.
           </p>
           <img src={tinnyImage} alt="calala" />
+        </div>
         </div>
 
       </div>
