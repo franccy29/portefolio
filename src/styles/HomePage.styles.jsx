@@ -40,8 +40,6 @@ export const StyledHomePage = styled.div`
   & .projet {
     color: black;
     text-align: center;
-    background-color: white;
-    border-radius: 50px;
     width: 60%;
     margin: 3em 0em;
 
@@ -65,7 +63,7 @@ export const StyledHomePage = styled.div`
       }
 
     & div {
-      padding: 8em 0;
+      padding: 4em 0;
       display: flex;
       justify-content: space-evenly;
 
@@ -82,5 +80,20 @@ export const StyledHomePage = styled.div`
         align-items: center;
       }
     }
+  }
+  & .border {
+    background-color: white;
+    border-radius: 50px;
+    margin: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 0em;
+    & div {
+      padding: 2em 0;
+      
+    }
+  }
+  & .football {
+    margin: 4em 0;
   }
 `;
