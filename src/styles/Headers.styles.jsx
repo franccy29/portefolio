@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const StyledHeaders = styled.div`
-  color: orange;
+  background-color: #545e75;
+  color: white;
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;

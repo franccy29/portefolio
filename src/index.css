@@ -1,7 +1,8 @@
 body {
-  background-color: rgb(1, 8, 105);
+  background-color: #545e75;
   box-sizing: border-box;
   height: 100%;
+  color: #484538;
 }
 
 #root {
