@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
-import { StyledHomePage } from "../styles/HomePage.styles.jsx";
 import footballImage from "../image/football.png";
 import schedulerImage from "../image/scheduler.png";
 import tweeterImage from "../image/tweeter.png";
@@ -8,7 +7,19 @@ import tinnyImage from "../image/tinny.png";
 import react from "../image/react.png";
 import JS from "../image/JS.png";
 import nodejs from "../image/nodejs.png";
+import styledComponent from "../image/styledComponent.png";
+import jest from "../image/jest.jpg";
+import jquery from "../image/jquery.png";
+import jwt from "../image/jwt.png";
+import materialui from "../image/materialui.png";
+import postgresql from "../image/postgresql.png";
+import storybook from "../image/storybook.png";
+
+
+
+
 import arrowDown from "../image/arrowDown.svg";
+import { StyledHomePage } from "../styles/HomePage.styles.jsx";
 
 
 function HomePage() {
@@ -21,6 +32,15 @@ function HomePage() {
   const reactImage = useRef();
   const JsImage = useRef();
   const nodeJsImage = useRef();
+  const arrow = useRef();
+  const styledComponentImage = useRef();
+  const jestImage = useRef();
+  const jqueryImage = useRef();
+  const jwtImage = useRef();
+  const materialuiImage = useRef();
+  const postgresqlImage = useRef();
+  const storybookImage = useRef();
+
 
   useEffect(() => {
     gsap.to(name.current, { duration: 2.5, x: 100 });
@@ -30,6 +50,15 @@ function HomePage() {
     gsap.to(reactImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
     gsap.to(JsImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
     gsap.to(nodeJsImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(styledComponentImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(jestImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(jqueryImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(jwtImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(materialuiImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(postgresqlImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+    gsap.to(storybookImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
+
+    gsap.to(arrow.current, { duration: 1, y: 20, yoyo: true, repeat: -1, ease: "sine.inOut", autoRound: false });
   });
 
 
@@ -51,11 +80,18 @@ function HomePage() {
         <img src={react} alt="React" ref={reactImage} />
         <img src={JS} alt="Java Script" ref={JsImage} />
         <img src={nodejs} alt="nodeJS" ref={nodeJsImage} />
+        <img src={styledComponent} alt="styledComponent" ref={styledComponentImage} />
+        <img src={jest} alt="React" ref={jestImage} />
+        <img src={jquery} alt="Java Script" ref={jqueryImage} />
+        <img src={jwt} alt="nodeJS" ref={jwtImage} />
+        <img src={materialui} alt="styledComponent" ref={materialuiImage} />
+        <img src={postgresql} alt="React" ref={postgresqlImage} />
+        <img src={storybook} alt="Java Script" ref={storybookImage} />
       </div>
 
         <div className={"top"}>
-          <h2>Mes projets</h2>
-          <img src={arrowDown} alt="arrowDown" />
+          <h1>Mes projets</h1>
+          <img src={arrowDown} alt="arrowDown" ref={arrow} />
         </div>
 
       <div className={"projet"}>
@@ -70,8 +106,6 @@ function HomePage() {
             complémentaire pour rendre les décisions en question d'alignement plus facile à chaque semaine.
             <br/>
             <br/>Tech Stack: React, JWT, Styled-component, Victory, Material UI, Knex, ExpressJs, Postgresql.
-            <br/>
-            <br/>(Ce projet est en cours, le frontend se fait remodeler en utilisant react-router et GSAP tandis que le backend se fait réécrire en .net core)
           </p>
         </div>
         </div>

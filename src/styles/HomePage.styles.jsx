@@ -11,6 +11,7 @@ export const StyledHomePage = styled.div`
   & .resume {
     width: 60%;
     font-size: 1.5em;
+    text-align: center;
   }
 
   & img {
@@ -35,6 +36,7 @@ export const StyledHomePage = styled.div`
 
   & .images {
     align-self: center;
+    margin-right: 200px;
   }
 
   & .projet {
@@ -67,6 +69,7 @@ export const StyledHomePage = styled.div`
       display: flex;
       justify-content: space-evenly;
 
+
       & img {
         width: 400px;
         height: 175px;
@@ -82,6 +85,8 @@ export const StyledHomePage = styled.div`
     }
   }
   & .border {
+    border: 1px solid #545e75;
+
     background-color: white;
     border-radius: 50px;
     margin: 2em 2em;
@@ -95,5 +100,23 @@ export const StyledHomePage = styled.div`
   }
   & .football {
     margin: 4em 0;
+  }
+  & .top {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+
+    & h1 {
+      color: black;
+      margin-bottom: 0;
+      margin-top: 1em;
+    }
+
+    & img {
+      height: 70px;
+      width: 70px;
+    }
   }
 `;

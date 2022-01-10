@@ -10,12 +10,12 @@ function Contact() {
     <StyledContact         
       className={"aboutSection"}
     >
-      <h2>Pour me contacter</h2>
-      <h3>Merci de vouloir travailler avec moi!</h3>
+      <h2>Merci de vouloir travailler avec moi!</h2>
+      <h3>Pour me contacter</h3>
       <h4>voici mes coordonées:</h4>
       <p>E-mail: francois.martineau97@gmail.com</p>
-      <a href="https://www.linkedin.com/in/francois-martineau97/" rel="noreferrer" target="_blank" ><img src={linkedIn} alt="linked in" height="300px" width="300px" /></a>
-      <a href="https://resume.creddle.io/resume/992ulo9z2bs" rel="noreferrer" target="_blank" ><img src={resume} alt="resumer" height="300px" width="300px" /></a>
+      <a href="https://www.linkedin.com/in/francois-martineau97/" rel="noreferrer" target="_blank" ><img src={linkedIn} alt="linked in" height="200px" width="200px" /></a>
+      <a href="https://resume.creddle.io/resume/992ulo9z2bs" rel="noreferrer" target="_blank" ><img src={resume} alt="resumer" height="200px" width="200px" /></a>
     </StyledContact>
   );
 }
