@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
+
 import footballImage from "../image/football.png";
 import schedulerImage from "../image/scheduler.png";
 import tweeterImage from "../image/tweeter.png";
@@ -14,11 +15,10 @@ import jwt from "../image/jwt.png";
 import materialui from "../image/materialui.png";
 import postgresql from "../image/postgresql.png";
 import storybook from "../image/storybook.png";
-
-
-
-
 import arrowDown from "../image/arrowDown.svg";
+import github from "../image/github.png";
+
+
 import { StyledHomePage } from "../styles/HomePage.styles.jsx";
 
 
@@ -58,7 +58,7 @@ function HomePage() {
     gsap.to(postgresqlImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
     gsap.to(storybookImage.current, { borderRadius: "20%", border: "5px solid #545e75" });
 
-    gsap.to(arrow.current, { duration: 1, y: 20, yoyo: true, repeat: -1, ease: "sine.inOut", autoRound: false });
+    gsap.to(arrow.current, { duration: 1, y: 25, yoyo: true, repeat: -1, ease: "sine.inOut", autoRound: false });
   });
 
 
@@ -108,6 +108,7 @@ function HomePage() {
             <br/>Tech Stack: React, JWT, Styled-component, Victory, Material UI, Knex, ExpressJs, Postgresql.
           </p>
         </div>
+          <a href="https://github.com/franccy29/Fantasy-Basketball-Helper-App" rel="noreferrer" target="_blank" ><img src={github} alt="resumer" /></a>
         </div>
 
         <div className={"border"}>
@@ -122,6 +123,7 @@ function HomePage() {
           </p>
           <img src={schedulerImage} alt="calala" />
         </div>
+            <a href="https://github.com/franccy29/Scheduler" rel="noreferrer" target="_blank" ><img src={github} alt="resumer" /></a>
         </div>
 
         <div className={"border"}>
@@ -135,6 +137,7 @@ function HomePage() {
             <br/>Tech Stack: jQuery, AJAX, Node, ExpressJs, MongoDB.
           </p>
         </div>
+          <a href="https://github.com/franccy29/tweeter" rel="noreferrer" target="_blank" ><img src={github} alt="resumer" /></a>
         </div>
 
         <div className={"border"}>
@@ -148,6 +151,7 @@ function HomePage() {
           </p>
           <img src={tinnyImage} alt="calala" />
         </div>
+          <a href="https://github.com/franccy29/tinyApp" rel="noreferrer" target="_blank" ><img src={github} alt="resumer" /></a>
         </div>
 
       </div>

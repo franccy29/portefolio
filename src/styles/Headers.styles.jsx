@@ -21,4 +21,8 @@ export const StyledHeaders = styled.div`
       border-bottom: 1px solid black;      
     }
   }
+  & .nom {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 `;

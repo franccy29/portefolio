@@ -28,10 +28,12 @@ function Headers(props) {
     gsap.to(total.current, { duration: 2.5, y: 50 });
   });
 
+  
+
   useEffect(() => {
     const target = findState(hoverComponent);
     if (hoverComponent) {
-      gsap.to(target.current, { borderRadius: "60%", borderBottom: "2px solid white" });
+      gsap.to(target.current, { borderBottom: "1px solid white" });
     } else {
       gsap.to(nom.current, { borderRadius: "0%", border: "0px solid white" });
       gsap.to(blog.current, { borderRadius: "0%", border: "0px solid white" });

@@ -5,8 +5,4 @@ export const StyledPost = styled.div`
   border-radius: 50px;
   color: black;
   margin: 1em 0;
-  
-  :hover {
-  background-color: gray;
-  }
 `;

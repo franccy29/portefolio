@@ -58,11 +58,7 @@ export const StyledHomePage = styled.div`
           height: 100px;
           width: 200px;
         }
-
-        & h2 {
-
-        }
-      }
+    }
 
     & div {
       padding: 4em 0;
@@ -71,9 +67,10 @@ export const StyledHomePage = styled.div`
 
 
       & img {
-        width: 400px;
-        height: 175px;
+        width: 500px;
+        height: 250px;
         margin: 0 5em;
+        border: 1px solid #545e75;
       }
 
       & p {
@@ -81,6 +78,7 @@ export const StyledHomePage = styled.div`
         height: 175px;
         display: flex;
         align-items: center;
+        margin: 3em 2em;
       }
     }
   }
@@ -97,10 +95,18 @@ export const StyledHomePage = styled.div`
       padding: 2em 0;
       
     }
+    & a {
+      & img {
+        height: 50px !important;
+        width: 50px !important;
+        border: 0px solid black !important;
+        display: flex;
+      }
   }
-  & .football {
-    margin: 4em 0;
   }
+  
+
+
   & .top {
     display: flex;
     justify-content: center;
@@ -119,4 +125,14 @@ export const StyledHomePage = styled.div`
       width: 70px;
     }
   }
+  & .football {
+    & p {
+      margin-top: 10em !important;
+    }
+    & img {
+      width: 250px !important;
+      height: 500px !important;
+    }
+  }
+
 `;
