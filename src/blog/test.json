@@ -8,8 +8,18 @@
   },
   {
     "id": 1,
-    "title": "titre test",
-    "text1": "un text ici",
-    "img1": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png"
+    "title": "futur post",
+    "text1": "refaire en francais le premier post",
+    "text2": "Gsap ou css animation, video grafikart sur animer avec react",
+    "text3": "nextJS ou inertia, client ou serveur render en emem temp",
+    "text4": "flex box et css grid mais dire que cest too soon pour etre utiliser partout(vieux ordi bug)",
+    "text5": "qwant? maybe? ",
+    "text6": "vuejs, react, angular mais aussi zvelte? les versions plus light genre preact?",
+    "text7": "react native, expliquer cest quoi",
+    "text8": "react router, redux en 2 ou dans le meme?",
+    "text9": "alpine? pas sur cest quoi mais maybe, on parle danimation sur le html",
+    "text10": "Typescript, avantage, incoveniant, les nouveaux type",
+    "text11": "chiffrement coter client sécurité (graphi a genre 26min)",
+    "text12": ""
   }
 ]
