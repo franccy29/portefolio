@@ -10,7 +10,7 @@ export const StyledHomePage = styled.div`
 
   & .resume {
     width: 60%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
   }
 
@@ -32,6 +32,11 @@ export const StyledHomePage = styled.div`
     font-size: 3em;
     padding: 1em 0;
     margin-right: 150px;
+
+    & .tab {
+      padding-left: 5em;
+      margin: 0;
+    }
   }
 
   & .images {

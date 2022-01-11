@@ -66,7 +66,9 @@ function HomePage() {
     <StyledHomePage>
 
       <div className={"intro"} ref={intro} >
-        Bienvenue! Je suis un developpeur web full-stack dans la région de Montréal, QC.
+        <span>Bienvenue!</span>
+        <br/>
+        <p className={"tab"} >Je suis un developpeur web full-stack dans la région de Montréal, QC.</p>
       </div>
 
       <p className={"resume"} >
