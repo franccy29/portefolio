@@ -68,14 +68,14 @@ function HomePage() {
       <div className={"intro"} ref={intro} >
         <span>Bienvenue!</span>
         <br/>
-        <p className={"tab"} >Je suis un developpeur web full-stack dans la région de Montréal, QC.</p>
+        <p className={"tab"} >Je suis un développeur web full-stack dans la région de Montréal, QC.</p>
       </div>
 
       <p className={"resume"} >
-        Aillant travailler en restauration durant 8 ans, je considère avoir beaucoup appris sur les habitudes de la clientèle et comment bien l'approcher.
-        Ce domaine est tres souvent dans un environnement sous pression ou nous devons travailler en équipe vers un but commun. Depuis mon tout jeune âge j'ai
-        été attirer vers le developpement informatique, j'ai donc décider tenter ma chance dans un Bootcamp avec LightHouse Labs. En plus, j'ai suivis certains cours de
-        CÉGEP dans ce domaine. Je suis donc acctuellement a la recherche d'un emplois qui utilise React ou autre technologie de la sorte.
+        Ayant travaillé en restauration durant 8 ans, je considère avoir beaucoup appris sur les habitudes de la clientèle et comment bien l'approcher.
+        Ce domaine est très souvent dans un environnement sous pression où nous devons travailler en équipe vers un but commun. Depuis mon tout jeune âge j'ai
+        été attiré vers le développement informatique, j'ai donc décidé tenté ma chance dans un Bootcamp avec Lighthouse Labs. En plus, j'ai suivi certains cours de
+        CÉGEP dans ce domaine. Je suis donc actuellement à la recherche d'un emploi qui utilise à react ou autres technologie de la sorte.
       </p>
 
       <div className={"images"} ref={images} >
@@ -103,9 +103,7 @@ function HomePage() {
         <div className={"football"} >
           <img src={footballImage} alt="calala" />
           <p>
-            Fantasy Hoops est une application qui permet aux utilisateurs de consulter rapidement et graphiquement plusieurs statistiques
-            plus ou moin avancer sur les performances de leurs équipes de fantasy basketball. L'application est fait d'une façon à être
-            complémentaire pour rendre les décisions en question d'alignement plus facile à chaque semaine.
+            Fantasy hoops est une application qui permet aux utilisateurs de consulter rapidement et graphiquement plusieurs statistiques plus ou moins avancer sur les performances de leurs équipes de fantaisie basket-ball. L'application est fait d'une façon à être complémentaire pour rendre les décisions en question d'alignement plus facile à chaque semaine. 
             <br/>
             <br/>Tech Stack: React, JWT, Styled-component, Victory, Material UI, Knex, ExpressJs, Postgresql.
           </p>
@@ -118,8 +116,7 @@ function HomePage() {
         <h2>Scheduler</h2>
         <div className={"scheduler"} >
           <p>
-            Ce projet est un simple planificateur, un projet future sera d'ajouter une gestion d'utilisateur et de rendre l'application utilisable
-            pour plusieurs autres situations que seulement ce qu'elle nous procure en ce moment. Ce projet vient du bootcamp LightHouse Labs.
+            Ce projet est un simple planificateur, un projet futur sera d'ajouter une gestion d'utilisateur et de rendre l'application utilisable pour plusieurs autres situations que seulement ce qu'elle nous procure en ce moment. Ce projet vient du Boot camp Lighthouse Labs.
             <br/>
             <br/>Tech Stack: React, Axios, Storybook, Jest, Cypress, Babel, Sass.
           </p>
@@ -147,7 +144,7 @@ function HomePage() {
         <h2>Tinny URL</h2>
         <div className={"tinny"} >
           <p>
-            Un clone de bit.ly, qui gère et génère des liens URL plus court.
+             Un clone de bit ly, qui gère et génère des liens URL plus court.
             <br/>
             <br/>Tech Stack: Chai, Mocha, Cookie-session, Ejs, ExpressJs.
           </p>
